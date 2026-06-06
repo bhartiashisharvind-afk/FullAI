@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="theme-switch">
+        <span>🌙</span>
+
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <h2>Currency Converter</h2>
+
+            <div class="input-group">
+                <label>Amount</label>
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Enter Amount"
+                >
+            </div>
+
+            <div class="currency-row">
+
+                <div class="input-group">
+                    <label>From</label>
+                    <select id="fromCurrency"></select>
+                </div>
+
+                <button class="swap-btn" id="swapBtn">
+                    ⇄
+                </button>
+
+                <div class="input-group">
+                    <label>To</label>
+                    <select id="toCurrency"></select>
+                </div>
+
+            </div>
+
+            <div class="rate-box" id="rateBox">
+                Loading exchange rate...
+            </div>
+
+            <button id="convertBtn" class="convert-btn">
+                Convert
+            </button>
+
+            <div class="result-box" id="resultBox">
+                Converted amount will appear here
+            </div>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
